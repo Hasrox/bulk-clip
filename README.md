@@ -23,8 +23,8 @@ All thanks to original creator juliogarciape, who really worked on this reposito
 - **VODs Downloads**: Download Videos on Demand (VODs) from Kick quickly with simple commands.
 - **Clips Downloads**: Download Clips from Kick with ease and speed.
 - **Customizable Options**: Adjust settings like format (mp4) and quality (1080p) to suit your needs.
--**improved clips fetching mechanism** ⚙️: To fetch all clips instead of the original ~20 clips max 🗂️
--**Now you can Download All Clips for a channel.**  📹
+- **improved clips fetching mechanism** ⚙️: To fetch all clips instead of the original ~20 clips max 🗂️
+- **Now you can Download All Clips for a channel.**  📹
 🟢Kick.com🟢 bulk clips download
 ## Support Us :sparkling_heart:
 
