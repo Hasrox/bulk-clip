@@ -32,17 +32,14 @@ export const promptContentType = (channelName) => {
 };
 
 export const promptClipDownloadType = () => {
-  return select({
-    message: 'Download type:',
-    choices: [
-      { 
-        name: 'Fetch All Clips', 
-        value: 'bulk',
-        description: '- Download single OR multiple clips at once' 
-      },
-    ],
-  });
-};
+	return confirm({
+	  message: 'Fetch All Clips?',
+	  default: true,
+	  transformer: (input) => input ? 'Yes' : 'No'
+	}).then(confirmed => {
+	  return 'bulk';
+	});
+  };
 export const promptContent = (choices, contentType) => {
   return select({
     message: `Select a ${contentType}:`,
@@ -108,7 +105,7 @@ export const promptClipSelection = (clips, channelName) => {
 	  choices,
 	  loop: false,
 	  pageSize: 15,
-	  instructions: `\n${colors.yellow('Use arrow keys ↑↓ to navigate, SPACE to select, Enter to confirm')}\n${colors.blue('Note: "SELECT ALL CLIPS" and individual selections are mutually exclusive')}\n${clipChoices.length} clips available`,
+	  instructions: `\n${colors.yellow('Use arrow keys ↑↓ to navigate, SPACE to select, Enter to confirm')}\n${clipChoices.length} clips available`,
 	  onState
 	});
   };
