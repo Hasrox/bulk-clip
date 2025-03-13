@@ -33,22 +33,16 @@ export const promptContentType = (channelName) => {
 
 export const promptClipDownloadType = () => {
   return select({
-    message: 'Select download type:',
+    message: 'Download type:',
     choices: [
       { 
-        name: 'Single Clip', 
-        value: 'single',
-        description: '- Download one specific clip' 
-      },
-      { 
-        name: 'Bulk Download', 
+        name: 'Fetch All Clips', 
         value: 'bulk',
-        description: '- Download multiple clips at once with advanced options' 
+        description: '- Download single OR multiple clips at once' 
       },
     ],
   });
 };
-
 export const promptContent = (choices, contentType) => {
   return select({
     message: `Select a ${contentType}:`,
