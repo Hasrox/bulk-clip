@@ -65,3 +65,29 @@ export const promptDownload = async (contentType, username) => {
 		},
 	});
 };
+
+// src/utils/prompts.js
+export const promptClipDownloadType = async () => {
+	return await select({
+	  message: 'How would you like to download clips?',
+	  theme: {
+		prefix: logMessage('[*]', 'green'),
+		style: {
+		  answer: (input) => logMessage(input, 'yellow'),
+		},
+	  },
+	  loop: true,
+	  choices: [
+		{
+		  name: 'Single clip',
+		  value: 'single',
+		  description: 'Download just one clip of your choice',
+		},
+		{
+		  name: 'Bulk download (all clips)',
+		  value: 'bulk',
+		  description: 'Download all available clips from this channel',
+		},
+	  ],
+	});
+  };
