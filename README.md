@@ -1,5 +1,8 @@
 # :sparkles: Kick-DL :frog:
+###all thanks to original creator juliogarciape, who really worked on this repositorie, I just added option to bulk download clips with some minor tweaks to UI.
 
+
+-Added new clips fetching mechanism -to fetch all clips instead of the original ~20 clips max
 ![Downloads](https://img.shields.io/npm/dm/kick-dl?label=Downloads&color=red&logo=npm)
 ![License](https://img.shields.io/npm/l/kick-dl?label=License&color=blue&logo=github)
 ![Npm](https://img.shields.io/npm/v/kick-dl?label=npm&color=&logo=npm)
@@ -42,7 +45,11 @@ npm install -g kick-dl
 ```sh
 pnpm add -g kick-dl
 ```
-
+-------------------
+To use open directory in CMD
+```sh
+kick-dl
+```
 > [!NOTE]
 > Kick-DL leverages Puppeteer to retrieve the .m3u8 paths for VODs and clips. As a result, you may encounter occasional issues, and no driver or Google Chrome configuration is necessary.
 >
