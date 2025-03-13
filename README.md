@@ -1,8 +1,8 @@
 # :sparkles: Kick-DL :frog:
-###all thanks to original creator juliogarciape, who really worked on this repositorie, I just added option to bulk download clips with some minor tweaks to UI.
+All thanks to original creator juliogarciape, who really worked on this repositorie, I just added option to bulk download clips with some minor tweaks to UI.
 
 
--Added new clips fetching mechanism -to fetch all clips instead of the original ~20 clips max
+
 ![Downloads](https://img.shields.io/npm/dm/kick-dl?label=Downloads&color=red&logo=npm)
 ![License](https://img.shields.io/npm/l/kick-dl?label=License&color=blue&logo=github)
 ![Npm](https://img.shields.io/npm/v/kick-dl?label=npm&color=&logo=npm)
@@ -23,7 +23,9 @@
 - **VODs Downloads**: Download Videos on Demand (VODs) from Kick quickly with simple commands.
 - **Clips Downloads**: Download Clips from Kick with ease and speed.
 - **Customizable Options**: Adjust settings like format (mp4) and quality (1080p) to suit your needs.
-
+-**improved clips fetching mechanism** ⚙️: To fetch all clips instead of the original ~20 clips max 🗂️
+-**Now you can Download All Clips for a channel.**  📹
+🟢Kick.com🟢 bulk clips download
 ## Support Us :sparkling_heart:
 
 If you find this project useful and want us to keep improving it, please consider:
